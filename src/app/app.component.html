@@ -1,3 +1,22 @@
-<h1>{{nombre | titlecase}}</h1>
 
-<button (click)="mostrarNombre()">Cambiar nombre</button>
+<div class="text-layout">
+  <h1>{{nombre | titlecase}}</h1>
+
+</div>
+
+<button pButton
+  (click)="mostrarNombre()"
+  label="Cambiar Nombre"
+  icon="pi pi-check"
+  iconPos="right"
+  class="p-button-help p-button-rounded"
+></button>
+<br>
+<p-card [header]="nombre | titlecase" subheader="Es subtitulo">
+
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  Inventore sed consequuntur error repudiandae numquam deserunt quisquam
+  repellat libero asperiores earum nam nobis, culpa ratione quam perferendis
+  esse, cupiditate neque quas!
+</p-card>
+
